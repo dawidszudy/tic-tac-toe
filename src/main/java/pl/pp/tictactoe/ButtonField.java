@@ -5,6 +5,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import static pl.pp.tictactoe.Utils.*;
+
 public class ButtonField extends JButton {
 
     private static boolean playerCross = true;
