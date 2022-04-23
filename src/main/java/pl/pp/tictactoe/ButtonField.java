@@ -42,14 +42,14 @@ public class ButtonField extends JButton {
             number[fieldNumber] = "X";
             playerCross = false;
             playerWheel = true;
-            labelPlayer.setText("   kółko");
+            labelPlayer.setText("   circle");
             numberClickCrossOrWheel++;
         } else if ( !playerCross && playerWheel && noClickField ) {
             setText("O");
             number[fieldNumber] = "O";
             playerCross = true;
             playerWheel = false;
-            labelPlayer.setText("   krzyżyk");
+            labelPlayer.setText("   cross");
             numberClickCrossOrWheel++;
         }
     }

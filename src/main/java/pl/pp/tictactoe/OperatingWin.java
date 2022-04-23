@@ -15,7 +15,7 @@ public class OperatingWin {
 
     private void checkTieInTheGame() {
         if ( numberClickCrossOrWheel == numberOfFields ) {
-            messageWindow.showMessage("Remis!");
+            messageWindow.showMessage("Tie!");
             resetGame();
         }
     }
@@ -24,13 +24,13 @@ public class OperatingWin {
         String line = checkAreFieldsWin(i);
 
         if ( line.equals("XXX") ) {
-            messageWindow.showMessage("Wygrana gracza krzyżyk!");
+            messageWindow.showMessage("Win! Cross player!");
             resetGame();
-            labelPlayer.setText("   kółko");
+            labelPlayer.setText("   circle");
         } else if ( line.equals("OOO") ) {
-            messageWindow.showMessage("Wygrana gracza kółko!");
+            messageWindow.showMessage("Win! Circle player!");
             resetGame();
-            labelPlayer.setText("   krzyżyk");
+            labelPlayer.setText("   cross");
         }
 
     }
